@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 @media (min-width: 1024px) {
   #board {
     width: 30vw; }
@@ -31,6 +31,11 @@ body {
   font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   color: #181818; }
 
+button {
+  border: none;
+  cursor: pointer;
+  position: relative; }
+
 #container {
   position: fixed;
   width: 100%;
@@ -50,15 +55,11 @@ body {
 
 #left {
   border-right: 5px solid #c49799; }
-  #left .content h1 {
-    font-family: "Lora", Times, serif;
+  #left #content h1 {
     color: #272230;
     font-size: 3rem;
     line-height: 1.5; }
-  #left .content button {
-    border: none;
-    cursor: pointer;
-    position: relative;
+  #left #content button {
     background-color: #c49799;
     font-size: 1rem;
     border-radius: 5px;
@@ -69,10 +70,10 @@ body {
     padding: 10px 35px;
     margin: 15px 30px;
     box-shadow: 0 4px #b17477; }
-  #left .content button:hover {
+  #left #content button:hover {
     box-shadow: 0 6px #b17477;
     top: -2px; }
-  #left .content button:active {
+  #left #content button:active {
     box-shadow: 0 0px #b17477;
     top: 4px; }
 
@@ -87,9 +88,14 @@ body {
   justify-items: center; }
   #board .cell {
     display: flex;
-    border: 1px solid #000;
+    border: 1px solid #808080;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    font-size: 1.5rem; }
+    #board .cell button {
+      background: transparent;
+      height: 100%;
+      width: 100%; }
   #board .cell:nth-child(1), #board .cell:nth-child(2), #board .cell:nth-child(3) {
     border-top: none; }
   #board .cell:nth-child(1), #board .cell:nth-child(4), #board .cell:nth-child(7) {
