@@ -1,0 +1,1 @@
+A browser Tic Tac Toe game made using vanilla JavaScript.
